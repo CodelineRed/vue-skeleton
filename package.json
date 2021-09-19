@@ -1,6 +1,6 @@
 {
     "name": "vue-skeleton",
-    "version": "1.7.0-dev",
+    "version": "1.7.0",
     "commitDate": "2021-09-19T12:00:00+01:00",
     "description": "Vue.js Skeleton with Gulp",
     "keywords": [
