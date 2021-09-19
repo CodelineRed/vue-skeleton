@@ -6,7 +6,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.6.0]
+## [1.7.0]
+### Added
+- `engines` to [`package.json`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/package.json)
+- sass 1.32.13
+
+### Changed
+- [`app/filters.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/vue/app/filters.js) comments
+- @babel/core 7.13.8 to 7.15.5
+- @babel/plugin-transform-modules-amd 7.13.0 to 7.14.5
+- @fortawesome/fontawesome-free 5.15.2 to 5.15.4
+- @fortawesome/fontawesome-svg-core 1.2.34 to 1.2.36
+- @fortawesome/free-brands-svg-icons 5.15.2 to 5.15.4
+- @fortawesome/free-regular-svg-icons 5.15.2 to 5.15.4
+- @fortawesome/free-solid-svg-icons 5.15.2 to 5.15.4
+- browser-sync 2.26.14 to 2.27.5
+- eslint-plugin-import 2.22.1 to 2.24.2
+- eslint-plugin-vue 7.7.0 to 7.18.0
+- gulp-autoprefixer 7.0.1 to 8.0.0
+- gulp-sass 4.1.0 to 5.0.0
+- gulp-uglify-es 2.0.0 to 3.0.0
+- gulp-vue-single-file-component 1.0.15 to 1.1.7
+- vanilla-lazyload 17.3.1 to 17.4.0
+- vue 2.6.12 to 2.6.14
+- vue-i18n 8.23.0 to 8.25.1
+- vue-router 3.5.1 to 3.5.2
+
+## [1.6.0] - 2021-03-06
 ### Changed
 - [`partial/app.vue`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/vue/component/partial/app.vue)
 - [`README.md`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/README.md)
