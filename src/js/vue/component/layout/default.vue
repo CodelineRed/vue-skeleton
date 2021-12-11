@@ -23,7 +23,7 @@
         </header>
         <main>
             <div class="container">
-                <router-view />
+                <router-view ref="view" />
             </div>
         </main>
         <footer>

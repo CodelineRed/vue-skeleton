@@ -18,5 +18,5 @@
 </script>
 
 <template>
-    <component :is="layout" />
+    <component :is="layout" ref="layout" />
 </template>
