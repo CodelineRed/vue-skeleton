@@ -6,6 +6,6 @@
 
 <template>
     <div class="container-fluid">
-        <router-view />
+        <router-view ref="view" />
     </div>
 </template>

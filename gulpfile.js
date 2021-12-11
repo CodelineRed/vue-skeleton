@@ -68,7 +68,7 @@ function favicon() {
             developerName: 'InsanityMeetsHH',
             developerURL: 'https://insanitymeetshh.net/',
             background: '#212121',
-            path: 'img/favicons/',
+            path: '',
             url: 'https://vue.insanitymeetshh.net/',
             display: 'standalone',
             orientation: 'portrait',

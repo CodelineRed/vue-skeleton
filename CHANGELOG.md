@@ -5,8 +5,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+- upgrade to bootstrap 5
+- upgrade to fontawesome 6 (if its released)
 
-## [1.7.0]
+## [1.8.0]
+### Added
+- ref attribute in [`layout/default.vue`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/vue/component/layout/default.vue) and [`partial/app.vue`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/vue/component/partial/app.vue)
+
+### Changed
+- [`.gitignore`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/.gitignore)
+- link to documentation in [`lib/bootstrap.scss`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/scss/lib/bootstrap.scss)
+
+### Fixed
+- favicon path in [`gulpfile.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/gulpfile.js)
+
+### Removed
+- `package-lock.json`
+
+## [1.7.0] - 2021-11-19
 ### Added
 - `engines` to [`package.json`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/package.json)
 - sass 1.32.13
