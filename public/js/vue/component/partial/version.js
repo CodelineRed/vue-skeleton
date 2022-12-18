@@ -1,0 +1,1 @@
+define(["exports"],(function(e){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;e.default={template:'<div class="col-8 col-md-6"> <span class="float-end"> {{ $t("version") }} {{ version }}<br> {{ $filters.formatDateTime(exampleDate, $t(\'datetime-suffix\')) }} </span> </div>'}}));
