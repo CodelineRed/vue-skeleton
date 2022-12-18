@@ -1,4 +1,5 @@
 const browserSync = require('browser-sync').create();
+const chalk       = require('chalk');
 const del         = require('del');
 const gulp        = require('gulp');
 const prefixer    = require('gulp-autoprefixer');
@@ -16,6 +17,7 @@ const sassLint    = require('gulp-sass-lint');
 const sourcemaps  = require('gulp-sourcemaps');
 const uglify      = require('gulp-uglify-es').default;
 const vueSfc      = require('gulp-vue-single-file-component');
+const replace     = require('replace');
 
 const config      = require('./src/app/gulpfile.json');
 const isEnv       = require('./src/app/is-env');
@@ -65,11 +67,11 @@ function favicon() {
             appName: 'Vue Skeleton',
             appShortName: 'Vue Skeleton',
             appDescription: 'This is my application',
-            developerName: 'InsanityMeetsHH',
-            developerURL: 'https://insanitymeetshh.net/',
-            background: '#212121',
+            developerName: 'CodelineRed',
+            developerURL: 'https://www.codelinered.net/',
+            background: '#ff2525',
             path: '',
-            url: 'https://vue.insanitymeetshh.net/',
+            url: 'https://vue.codelinered.net/',
             display: 'standalone',
             orientation: 'portrait',
             scope: '/',
@@ -141,9 +143,9 @@ function jsRequire() {
     let returnValue;
     const modules = {
         'require': 'node_modules/requirejs/require.js',
-        'vue': 'node_modules/vue/dist/vue.min.js',
-        'vue-router': 'node_modules/vue-router/dist/vue-router.min.js',
-        'vue-i18n': 'node_modules/vue-i18n/dist/vue-i18n.js',
+        'vue': 'node_modules/vue/dist/vue.global.prod.js',
+        'vue-i18n': 'node_modules/vue-i18n/dist/vue-i18n.global.prod.js',
+        'vue-router': 'node_modules/vue-router/dist/vue-router.global.prod.js',
         'fontawesome-svg-core': 'node_modules/@fortawesome/fontawesome-svg-core/index.js',
         'free-brands-svg-icons': 'node_modules/@fortawesome/free-brands-svg-icons/index.js',
         'free-regular-svg-icons': 'node_modules/@fortawesome/free-regular-svg-icons/index.js',
@@ -152,8 +154,9 @@ function jsRequire() {
     };
 
     if (isEnv('dev', config.env)) {
-        modules['vue'] = 'node_modules/vue/dist/vue.js';
-        modules['vue-router'] = 'node_modules/vue-router/dist/vue-router.js';
+        modules['vue'] = 'node_modules/vue/dist/vue.global.js';
+        modules['vue-i18n'] = 'node_modules/vue-i18n/dist/vue-i18n.global.js';
+        modules['vue-router'] = 'node_modules/vue-router/dist/vue-router.global.js';
     }
 
     const moduleKeys = Object.keys(modules);
@@ -166,6 +169,23 @@ function jsRequire() {
             .pipe(gulp.dest(config.publicPath + 'js/require/'));
     }
     return returnValue;
+}
+
+// search and replace text in third party files
+function jsRequireSAR() {
+    return new Promise(function(resolve, reject) {
+        replace({
+            regex: '([a-z]{1,3})(\\.h\\(|\\.watch\\(|\\.computed\\(|\\.defineComponent\\()',
+            replacement: 'Vue$2',
+            paths: [
+//                config.systemPath + 'js/require/vue-fontawesome.js',
+                config.publicPath + 'js/require/vue-fontawesome.js'
+            ],
+            recursive: true,
+            silent: true
+        });
+        resolve();
+    });
 }
 
 // copy all json files and minify
@@ -217,6 +237,14 @@ function svg() {
         .pipe(gulp.dest(config.publicPath + 'svg/'));
 }
 
+// thank you
+function thankYou() {
+    return new Promise(function(resolve, reject) {
+        console.log(chalk.redBright(' ♥ ') + chalk.bold('Thank you for using Vue Skeleton 2!') + chalk.redBright(' ♥ '));
+        resolve();
+    });
+}
+
 // transpile vue files
 function vue() {
     return gulp.src(config.sourcePath + 'js/vue/**/*.vue')
@@ -261,7 +289,7 @@ function watch() {
         config.sourcePath + 'js/scripts.js'
     ], gulp.series(js, jsLint));
     // watch require js files
-    gulp.watch(config.sourcePath + 'js/module/require-config.js', jsRequire);
+    gulp.watch(config.sourcePath + 'js/module/require-config.js', gulp.series(jsRequire, jsRequireSAR));
     // watch vue files
     gulp.watch(config.sourcePath + 'js/vue/**', gulp.series(vue, vueJs, vueJsLint, vueLint));
     // watch json files
@@ -288,10 +316,12 @@ exports.img = img;
 exports.js = js;
 exports.jsLint = jsLint;
 exports.jsRequire = jsRequire;
+exports.jsRequireSAR = jsRequireSAR;
 exports.json = json;
 exports.scss = scss;
 exports.scssLint = scssLint;
 exports.svg = svg;
+exports.thankYou = thankYou;
 exports.vue = vue;
 exports.vueJs = vueJs;
 exports.vueJsLint = vueJsLint;
@@ -303,7 +333,7 @@ exports.watchAndReload = watchAndReload;
 gulp.task('lintAll', gulp.series(jsLint, scssLint, vueJsLint, vueLint));
 
 // build task
-gulp.task('build', gulp.series(cleanUp, favicon, font, img, js, jsLint, jsRequire, json, scss, scssLint, svg, vue, vueJs, vueJsLint, vueLint));
+gulp.task('build', gulp.series(thankYou, cleanUp, favicon, font, img, js, jsLint, jsRequire, jsRequireSAR, json, scss, scssLint, svg, vue, vueJs, vueJsLint, vueLint));
 
 // default task if you just call "gulp"
 gulp.task('default', gulp.parallel(watchAndReload, browserSyncInit));

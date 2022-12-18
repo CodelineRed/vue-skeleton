@@ -1,14 +1,12 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import i18n from './i18n';
 import routes from './routes';
 
-Vue.use(VueRouter);
 i18n.locale = localStorage.currentLocale ? localStorage.currentLocale : i18n.currentLocale;
 
-const router = new VueRouter({
+const router = VueRouter.createRouter({ // eslint-disable-line no-undef
     // base: '/',
-    // mode: 'history',
+    history: VueRouter.createWebHashHistory(), // eslint-disable-line no-undef
     routes: routes,
     /**
      * Returns translated meta string
@@ -52,6 +50,7 @@ const router = new VueRouter({
 
         // if i18nMatches is not empty
         if (i18nMatches !== null) {
+            const { t } = i18n.global;
             for (let i = 0; i < i18nMatches.length; i++) {
                 let params = []; // eslint-disable-line array-bracket-newline
 
@@ -60,7 +59,7 @@ const router = new VueRouter({
                     params = i18nMatches[i].match(i18nParamsRegExp)[0].replace(/\(|\)/g, '').split('|');
                 }
 
-                meta = meta.replace(i18nMatches[i], i18n.t(i18nMatches[i].replace(i18nCleanRegExp, ''), params));
+                meta = meta.replace(i18nMatches[i], t(i18nMatches[i].replace(i18nCleanRegExp, ''), params));
             }
         }
 

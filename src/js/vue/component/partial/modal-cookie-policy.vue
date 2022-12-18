@@ -1,6 +1,6 @@
 <script>
     export default {
-        
+
     };
 </script>
 
@@ -12,13 +12,11 @@
                     <h5 class="modal-title">
                         {{ $t("cookie-policy-title") }}
                     </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     {{ $t("cl-message") }}<br>
-                    <button class="btn btn-primary mt-2" type="button" data-toggle="collapse" data-target="#cookie-policy-collapse" aria-expanded="false" aria-controls="cookie-policy-collapse">
+                    <button class="btn btn-primary mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#cookie-policy-collapse" aria-expanded="false" aria-controls="cookie-policy-collapse">
                         {{ $t("cpm-sdi") }}
                     </button>
 
@@ -37,7 +35,7 @@
                                 <tbody>
                                     <tr>
                                         <td>cookieconsent_status</td>
-                                        <td>vue.insanitymeetshh.net</td>
+                                        <td>vue.codelinered.net</td>
                                         <td>{{ $t("cpm-cc-status") }}</td>
                                         <td><span class="text-nowrap">{{ $t("year", ['1']) }}</span></td>
                                         <td><span class="text-nowrap">{{ $t("type", ['2']) }}</span></td>

@@ -11,7 +11,7 @@
     },
     "browserSyncDocker": {
         "port": 3000,
-        "proxy": "http://127.0.0.1:3050/",
+        "proxy": "http://127.0.0.1:7702/",
         "server": false,
         "ui": false
     },

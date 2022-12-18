@@ -1,4 +1,3 @@
-import Vue from 'vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
     faCss3 as fabCss3,
@@ -25,13 +24,8 @@ import {
     faUserSecret as fasUserSecret
 } from '@fortawesome/free-solid-svg-icons';
 
-import { FontAwesomeIcon, FontAwesomeLayers } from '@fortawesome/vue-fontawesome';
-
 library.add(fabCss3, fabFontAwesomeFlag, fabGithub, fabHtml5, fabVuejs);
 library.add(farSadCry, farSquare);
 library.add(fasBold, fasChevronLeft, fasChevronRight, fasCircle, fasGlobe, fasImage, fasSquare, fasSync, fasUserSecret);
-
-Vue.component('font-awesome-icon', FontAwesomeIcon);
-Vue.component('font-awesome-layers', FontAwesomeLayers);
 
 export default library;

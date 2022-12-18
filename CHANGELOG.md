@@ -5,30 +5,89 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-- upgrade to bootstrap 5
-- upgrade to fontawesome 6 (if its released)
 
-## [1.8.0]
+## [2.0.0]
 ### Added
-- ref attribute in [`layout/default.vue`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/vue/component/layout/default.vue) and [`partial/app.vue`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/vue/component/partial/app.vue)
+- examples in [`app/filters.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/app/filters.js)
+- [`partial/version.vue`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/app/component/partial/version.vue)
+- component "version" in [`layout/default.vue`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/app/component/layout/default.vue)
+- `package-lock.json` back again to fix `vueLint` task
+- `jsRequireSAR()` in [`gulpfile.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/gulpfile.js)
+- `thankYou()` in [`gulpfile.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/gulpfile.js)
+- chalk 4.1.2
+- replace 1.2.2
 
 ### Changed
-- [`.gitignore`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/.gitignore)
-- link to documentation in [`lib/bootstrap.scss`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/scss/lib/bootstrap.scss)
+- host in [`public/.htaccess`](https://github.com/CodelineRed/vue-skeleton/blob/master/public/.htaccess)
+- Docker port from 3050 to 7702 in [`app/gulpfile.json`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/app/gulpfile.dist.json)
+- file for Vue 3 upgrade in [`app/fontawesome.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/app/fontawesome.js)
+- nickname in [`app/i18n-locales.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/app/i18n-locales.js)
+- file for Vue-i18n 9 upgrade in [`app/i18n.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/app/i18n.js)
+- file for Vue-Router 4 upgrade in [`app/router.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/app/router.js)
+- file for Vue-Router 4 upgrade in [`app/routes.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/app/routes.js)
+- `font-awesome-icon` to `fa` in all `*.vue`
+- `font-awesome-layers` to `fal` in all `*.vue`
+- lazy load image colors in [`page/home.vue`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/app/component/page/home.vue)
+- syntax from BS4 to BS5 in [`page/home.vue`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/app/component/page/home.vue)
+- syntax from BS4 to BS5 in [`partial/langswitch.vue`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/app/component/partial/langswitch.vue)
+- syntax from BS4 to BS5 in [`partial/modal-cookie-policy.vue`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/app/component/partial/modal-cookie-policy.vue)
+- syntax from BS4 to BS5 in [`module/cookie-consent.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/module/cookie-consent.js)
+- syntax from Vue 2 to Vue 3 in [`vue/app.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/app.js)
+- import in [`lib/bootstrap.scss`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/scss/lib/bootstrap.scss)
+- import in [`lib/fontawesome.scss`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/scss/lib/fontawesome.scss)
+- button hover style in [`module/_cookieconsent.scss`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/scss/module/_cookieconsent.scss)
+- theme color and link decoration in [`scss/_variables.scss`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/scss/_variables.scss)
+- php 7 to php 8 in [`docker-compose.yml`](https://github.com/CodelineRed/vue-skeleton/blob/master/docker-compose.yml)
+- Docker port from 3050 to 7702 in [`docker-compose.yml`](https://github.com/CodelineRed/vue-skeleton/blob/master/docker-compose.yml)
+- nickname in [`gulpfile.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/gulpfile.js)
+- `jsRequire()` in [`gulpfile.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/gulpfile.js)
+- [`.gitignore`](https://github.com/CodelineRed/vue-skeleton/blob/master/.gitignore)
+- [`README.md`](https://github.com/CodelineRed/vue-skeleton/blob/master/README.md)
+- @babel/core 7.15.5 to 7.20.2
+- @babel/plugin-transform-modules-amd 7.14.5 to 7.19.6
+- @fortawesome/fontawesome-free 5.15.4 to 6.2.1
+- @fortawesome/fontawesome-svg-core 1.2.36 to 6.2.1
+- @fortawesome/free-brands-svg-icons 5.15.4 to 6.2.1
+- @fortawesome/free-regular-svg-icons 5.15.4 to 6.2.1
+- @fortawesome/free-solid-svg-icons 5.15.4 to 6.2.1
+- @fortawesome/vue-fontawesome 2.0.2 to 3.0.2
+- babel-eslint 10.1.0 to 9.0.0
+- bootstrap 4.6.0 to 5.2.3
+- browser-sync 2.27.5 to 2.27.10
+- del 6.0.0 to 6.1.1
+- eslint-plugin-import 2.24.2 to 2.26.0
+- eslint-plugin-vue 7.18.0 to 7.20.0
+- gulp-sass 5.0.0 to 5.1.0
+- gulp-vue-single-file-component 1.1.7 to 1.2.5
+- jquery 3.6.0 to 3.6.2
+- moment 2.29.1 to 2.29.4
+- sass 1.32.13 to 1.57.0
+- vanilla-lazyload 17.4.0 to 17.8.3
+- vue 2.6.14 to 3.2.45
+- vue-i18n 8.25.1 to 9.2.2
+- vue-router 3.5.2 to 4.1.6
+
+## [1.8.0] - 2021-12-11
+### Added
+- ref attribute in [`layout/default.vue`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/component/layout/default.vue) and [`partial/app.vue`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/component/partial/app.vue)
+
+### Changed
+- [`.gitignore`](https://github.com/CodelineRed/vue-skeleton/blob/master/.gitignore)
+- link to documentation in [`lib/bootstrap.scss`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/scss/lib/bootstrap.scss)
 
 ### Fixed
-- favicon path in [`gulpfile.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/gulpfile.js)
+- favicon path in [`gulpfile.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/gulpfile.js)
 
 ### Removed
 - `package-lock.json`
 
 ## [1.7.0] - 2021-11-19
 ### Added
-- `engines` to [`package.json`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/package.json)
+- `engines` to [`package.json`](https://github.com/CodelineRed/vue-skeleton/blob/master/package.json)
 - sass 1.32.13
 
 ### Changed
-- [`app/filters.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/vue/app/filters.js) comments
+- [`app/filters.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/app/filters.js) comments
 - @babel/core 7.13.8 to 7.15.5
 - @babel/plugin-transform-modules-amd 7.13.0 to 7.14.5
 - @fortawesome/fontawesome-free 5.15.2 to 5.15.4
@@ -50,9 +109,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.6.0] - 2021-03-06
 ### Changed
-- [`partial/app.vue`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/vue/component/partial/app.vue)
-- [`README.md`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/README.md)
-- [`.gitignore`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/.gitignore)
+- [`partial/app.vue`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/component/partial/app.vue)
+- [`README.md`](https://github.com/CodelineRed/vue-skeleton/blob/master/README.md)
+- [`.gitignore`](https://github.com/CodelineRed/vue-skeleton/blob/master/.gitignore)
 - @babel/core 7.12.16 to 7.13.8
 - @babel/plugin-transform-modules-amd 7.12.13 to 7.13.0
 - eslint-plugin-vue 7.5.0 to 7.7.0
@@ -60,15 +119,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - vue-i18n 8.22.4 to 8.23.0
 
 ### Removed
-- `vue/method` and replaced with [`vue/module`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/vue/module)
+- `vue/method` and replaced with [`vue/module`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/module)
 - `vue/app/methods.js`
 
 ## [1.5.0] - 2021-02-14
 ### Changed
-- [`public/.htaccess`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/public/.htaccess)
-- [`gulpfile.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/gulpfile.js)
-- [`README.md`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/README.md)
-- [`.gitignore`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/.gitignore)
+- [`public/.htaccess`](https://github.com/CodelineRed/vue-skeleton/blob/master/public/.htaccess)
+- [`gulpfile.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/gulpfile.js)
+- [`README.md`](https://github.com/CodelineRed/vue-skeleton/blob/master/README.md)
+- [`.gitignore`](https://github.com/CodelineRed/vue-skeleton/blob/master/.gitignore)
 - @babel/core 7.12.1 to 7.12.16
 - @babel/plugin-transform-modules-amd 7.12.1 to 7.12.13
 - @fortawesome/fontawesome-free 5.15.1 to 5.15.2
@@ -87,9 +146,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.4.0] - 2020-10-20
 ### Changed
-- [`app/vue-lint.json`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/app/vue-lint.json)
-- [`app/router.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/vue/app/router.js)
-- [`README.md`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/README.md)
+- [`app/vue-lint.json`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/app/vue-lint.json)
+- [`app/router.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/app/router.js)
+- [`README.md`](https://github.com/CodelineRed/vue-skeleton/blob/master/README.md)
 - @babel/core 7.11.6 to 7.12.3
 - @fortawesome/fontawesome-free 5.14.0 to 5.15.1
 - @fortawesome/fontawesome-svg-core 1.2.30 to 1.2.32
@@ -107,15 +166,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.3.0] - 2020-09-20
 ### Added
-- [`partial/naviagation.vue`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/vue/component/partial/naviagation.vue)
-- CSS lazy class in [`page/home.vue`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/vue/component/page/home.vue)
+- [`partial/naviagation.vue`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/component/partial/naviagation.vue)
+- CSS lazy class in [`page/home.vue`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/component/page/home.vue)
 
 ### Changed
-- [`app/filters.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/vue/app/filters.js) comments
-- [`layout/default.vue`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/vue/component/layout/default.vue)
-- [`partial/langswitch.vue`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/vue/component/partial/langswitch.vue)
-- order in cleanUp task and how to remove files from js/css folder in [`gulpfile.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/gulpfile.js)
-- favicon task in [`gulpfile.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/gulpfile.js)
+- [`app/filters.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/app/filters.js) comments
+- [`layout/default.vue`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/component/layout/default.vue)
+- [`partial/langswitch.vue`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/component/partial/langswitch.vue)
+- order in cleanUp task and how to remove files from js/css folder in [`gulpfile.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/gulpfile.js)
+- favicon task in [`gulpfile.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/gulpfile.js)
 - @babel/core 7.10.1 to 7.11.6
 - @babel/plugin-transform-modules-amd 7.10.1 to 7.10.5
 - @fortawesome/fontawesome-free 5.13.0 to 5.14.0
@@ -140,15 +199,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.2.0] - 2020-05-30
 ### Added
 - gulp-favicons 2.4.0
-- `require-config.js` watcher in [`gulpfile.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/gulpfile.js)
-- favicon task in [`gulpfile.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/gulpfile.js)
-- [`favicon.png`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/img/favicon.png)
+- `require-config.js` watcher in [`gulpfile.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/gulpfile.js)
+- favicon task in [`gulpfile.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/gulpfile.js)
+- [`favicon.png`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/img/favicon.png)
 
 ### Changed
-- order of tasks in [`gulpfile.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/gulpfile.js)
-- favicon html in [`public/index.html`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/public/index.html)
-- [`require-config.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/module/require-config.js)
-- [`README.md`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/README.md)
+- order of tasks in [`gulpfile.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/gulpfile.js)
+- favicon html in [`public/index.html`](https://github.com/CodelineRed/vue-skeleton/blob/master/public/index.html)
+- [`require-config.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/module/require-config.js)
+- [`README.md`](https://github.com/CodelineRed/vue-skeleton/blob/master/README.md)
 - @babel/core 7.9.0 to 7.10.1
 - @babel/plugin-transform-modules-amd 7.9.0 to 7.10.1
 - bootstrap 4.4.1 to 4.5.0
@@ -160,24 +219,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 - `src/img/favicons` folder
-- browserSyncInit() config in [`gulpfile.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/gulpfile.js) and moved in [`gulpfile.json`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/app/gulpfile.dist.json)
+- browserSyncInit() config in [`gulpfile.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/gulpfile.js) and moved in [`gulpfile.json`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/app/gulpfile.dist.json)
 
 ## [1.1.0] - 2020-04-26
 ### Added
-- [`filters.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/vue/app/filters.js)
-- filters in [`app.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/vue/app.js)
-- `window.app` in [`app.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/vue/app.js)
-- moment and lintAll task in [`gulpfile.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/gulpfile.js)
-- [`npm-postinstall.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/npm-postinstall.js)
+- [`filters.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/app/filters.js)
+- filters in [`app.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/app.js)
+- `window.app` in [`app.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/app.js)
+- moment and lintAll task in [`gulpfile.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/gulpfile.js)
+- [`npm-postinstall.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/npm-postinstall.js)
 - moment 2.24.0
 
 ### Changed
 - all bg-info to bg-primary
-- [`import-lint.json`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/app/import-lint.json)
-- [`js-lint.json`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/app/js-lint.json)
-- [`vue-lint.json`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/app/vue-lint.json)
-- Date time fomats in [`i18n-locales.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/vue/app/i18n-locales.js)
-- [`README.md`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/README.md)
+- [`import-lint.json`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/app/import-lint.json)
+- [`js-lint.json`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/app/js-lint.json)
+- [`vue-lint.json`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/app/vue-lint.json)
+- Date time fomats in [`i18n-locales.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/app/i18n-locales.js)
+- [`README.md`](https://github.com/CodelineRed/vue-skeleton/blob/master/README.md)
 - @babel/core 7.8.7 to 7.9.0
 - @babel/plugin-transform-modules-amd 7.8.3 to 7.9.0
 - eslint-plugin-import 2.20.1 to 2.20.2
