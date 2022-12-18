@@ -1,6 +1,6 @@
-# Vue Skeleton - InsanityMeetsHH
+# Vue Skeleton - CodelineRed
 
-[**Demo page**](http://vue.insanitymeetshh.net)
+[**Demo page**](https://vue.codelinered.net)
 
 ## Table of contents
 - [Included Third Party Code](#included)
@@ -15,28 +15,42 @@
 
 ## Included
 * [jQuery 3](http://jquery.com)
-* [Bootstrap 4](https://getbootstrap.com)
-* [Font Awesome 5](https://fontawesome.com)
+* [Bootstrap 5](https://getbootstrap.com)
+* [Font Awesome 6](https://fontawesome.com)
 * [Slick Carousel 1](http://kenwheeler.github.io/slick/)
 * [LazyLoad 17](https://www.andreaverlicchi.eu/vanilla-lazyload/)
 * [CSS User Agent 2](https://www.npmjs.com/package/cssuseragent)
 * [Cookieconsent 3](https://github.com/insites/cookieconsent)
-* [Vue 2](https://vuejs.org/)
-* [Vue Router 3](https://router.vuejs.org/)
-* [Vue i18n 8](https://kazupon.github.io/vue-i18n/)
+* [Vue 3](https://vuejs.org/)
+* [Vue Router 4](https://router.vuejs.org/)
+* [Vue i18n 9](https://kazupon.github.io/vue-i18n/)
 * [Vue SFC 1](https://github.com/nfplee/gulp-vue-single-file-component)
 
 ## Install Production Build (Recommended)
 
-[Download zip](https://github.com/InsanityMeetsHH/vue-skeleton/archive/production.zip) if you don't have git on your OS.
 Open console on your OS and navigate to your project folder.
+[Download zip](https://github.com/CodelineRed/vue-skeleton/archive/production.zip) if you don't have git on your OS.
 ```bash
-$ (optional) php composer create-project insanitymeetshh/vue-skeleton vue-skeleton "dev-production"
-$ git clone https://github.com/InsanityMeetsHH/vue-skeleton.git
++++++ ZIP VERSION +++++
+$ (unix) wget -O vs-prod.zip https://github.com/CodelineRed/vue-skeleton/archive/production.zip
+$ (unix) unzip vs-prod.zip
+$ (win10) curl -L -o vs-prod.zip https://github.com/CodelineRed/vue-skeleton/archive/production.zip
+$ (win10) tar -xf vs-prod.zip
+```
+
+```bash
++++++ GIT VERSION +++++
+$ git clone https://github.com/CodelineRed/vue-skeleton.git
 $ cd vue-skeleton
 $ git checkout production
 $ (optional on unix) rm -rf .git
-$ (optional on windows) rmdir .git /s
+$ (optional on win10) rmdir .git /s
+```
+
+```bash
++++++ COMPOSER VERSION +++++
+$ php composer create-project codelinered/vue-skeleton vue-skeleton "dev-production"
+$ cd vue-skeleton
 ```
 If you need PHP, you have to go to [Install PHP](#install-php-optional).
 
@@ -45,17 +59,38 @@ If you need PHP, you have to go to [Install PHP](#install-php-optional).
 - [Node.js](http://nodejs.org/en/download/) >= 12.20
 - [npm](http://www.npmjs.com/get-npm) `$ npm i npm@latest -g`
 - [gulp-cli](https://www.npmjs.com/package/gulp-cli) `$ npm i gulp-cli@latest -g`
-- [windows-build-tools](https://www.npmjs.com/package/windows-build-tools) `$ npm i windows-build-tools@latest -g`
+- ~~[windows-build-tools](https://www.npmjs.com/package/windows-build-tools) `$ npm i windows-build-tools@latest -g`~~
 
-[Download zip](https://github.com/InsanityMeetsHH/vue-skeleton/archive/master.zip) if you don't have git on your OS.
 Open console on your OS and navigate to your project folder.
+[Download zip](https://github.com/CodelineRed/vue-skeleton/archive/master.zip) if you don't have git on your OS.
 ```bash
-$ (optional) php composer create-project insanitymeetshh/vue-skeleton
-$ git clone https://github.com/InsanityMeetsHH/vue-skeleton.git
++++++ ZIP VERSION +++++
+$ (unix) wget -O vs-mstr.zip https://github.com/CodelineRed/vue-skeleton/archive/master.zip
+$ (unix) unzip vs-mstr.zip
+$ (win10) curl -L -o vs-mstr.zip https://github.com/CodelineRed/vue-skeleton/archive/master.zip
+$ (win10) tar -xf vs-mstr.zip
+$ cd vue-skeleton-master
+$ npm i
+$ gulp build
+$ gulp
+```
+
+```bash
++++++ GIT VERSION +++++
+$ git clone https://github.com/CodelineRed/vue-skeleton.git
 $ cd vue-skeleton
-$ (optional) git checkout develop
+$ git checkout master
 $ (optional on unix) rm -rf .git
-$ (optional on windows) rmdir .git /s
+$ (optional on win10) rmdir .git /s
+$ npm i
+$ gulp build
+$ gulp
+```
+
+```bash
++++++ COMPOSER VERSION +++++
+$ php composer create-project codelinered/vue-skeleton
+$ cd vue-skeleton
 $ npm i
 $ gulp build
 $ gulp
@@ -72,36 +107,38 @@ $ (unix) systemctl docker start
 $ (windows) "c:\path\to\Docker Desktop.exe"
 $ docker-compose up -d
 ```
-Open [localhost:3050](http://localhost:3050) for Website.
+Open [localhost:7702](http://localhost:7702) for Website.
 
 ## Project Commands
 |                     | Description                                                                                                                |
 |---------------------|----------------------------------------------------------------------------------------------------------------------------|
 | gulp                | watch files and start [BrowserSync](https://www.npmjs.com/package/browser-sync)                                            |
-| gulp build          | executes following tasks: cleanUp, favicon, font, img, js, jsLint, jsRequire, json, scss, scssLint, svg, vue, vueJs, vueJsLint, vueLint |
+| gulp build          | executes following tasks: cleanUp, favicon, font, img, js, jsLint, jsRequire, jsRequireSAR, json, scss, scssLint, svg, vue, vueJs, vueJsLint, vueLint |
 | gulp lintAll        | executes following tasks: jsLint, scssLint, vueJsLint, vueLint                                                             |
 | gulp cleanUp        | clean up public folder                                                                                                     |
 | gulp favicon        | generate favicons                                                                                                          |
 | gulp font           | copy font files                                                                                                            |
 | gulp img            | copy and compress images                                                                                                   |
 | gulp js             | uglify, minify and concat js files                                                                                         |
-| gulp jsLint         | checks js follows [lint rules](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/app/js-lint.json)           | 
+| gulp jsLint         | checks js follows [lint rules](https://github.com/CodelineRed/vue-skeleton/blob/master/src/app/js-lint.json)               | 
 | gulp jsRequire      | copy, uglify and rename files for requirejs                                                                                |
+| gulp jsRequireSAR   | search and replace text in third party files (use this after every gulp jsRequire)                                         |
 | gulp json           | copy and minify json files                                                                                                 |
 | gulp scss           | compile, minify and concat scss files                                                                                      |
-| gulp scssLint       | checks scss follows [lint rules](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/app/scss-lint.json)       |
+| gulp scssLint       | checks scss follows [lint rules](https://github.com/CodelineRed/vue-skeleton/blob/master/src/app/scss-lint.json)           |
 | gulp svg            | copy and compress svg files                                                                                                |
+| gulp thankYou       | a small thank for you                                                                                                      |
 | gulp vue            | transpile vue files                                                                                                        |
 | gulp vueJs          | transpile vue js files                                                                                                     |
-| gulp vueJsLint      | checks vue js follows [lint rules](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/app/import-lint.json)   |
-| gulp vueLint        | checks vue follows [lint rules](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/app/vue-lint.json)         |
+| gulp vueJsLint      | checks vue js follows [lint rules](https://github.com/CodelineRed/vue-skeleton/blob/master/src/app/import-lint.json)       |
+| gulp vueLint        | checks vue follows [lint rules](https://github.com/CodelineRed/vue-skeleton/blob/master/src/app/vue-lint.json)             |
 | gulp watch          | watch scss, js, json, vue, img, font and svg files                                                                         |
 
 ## Localization
-- [`i18n-locales.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/vue/app/i18n-locales.js)
-- [`langswitch.vue`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/js/vue/component/partial/langswitch.vue)
+- [`i18n-locales.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/app/i18n-locales.js)
+- [`langswitch.vue`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/js/vue/component/partial/langswitch.vue)
 
-## [`gulpfile.json`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/src/app/gulpfile.dist.json)
+## [`gulpfile.json`](https://github.com/CodelineRed/vue-skeleton/blob/master/src/app/gulpfile.dist.json)
 |                     | Description                                                                                                                      |
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | browserSyncConfig   | Required - Defines which config is used for [BrowserSync](https://www.npmjs.com/package/browser-sync) (default: browserSyncDev)  |

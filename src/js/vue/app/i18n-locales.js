@@ -1,13 +1,13 @@
 const en = {
     'app': 'Vue Skeleton',
-    'author': 'InsanityMeetsHH',
-    'bootstrap': 'Bootstrap 4',
+    'author': 'CodelineRed',
+    'bootstrap': 'Bootstrap 5',
     'cookieconsent': 'Cookieconsent 3',
     'cookie-policy-title': 'Cookie Policy',
     'cssua': 'CSS User Agent',
     'cssua-monitor': 'CSS User Agent Monitor',
     'expires': 'Expires',
-    'fontawesome': 'Font Awesome 5',
+    'fontawesome': 'Font Awesome 6',
     'included': 'included',
     'lazyload': 'LazyLoad Image',
     'lazyload-example': 'LazyLoad Example',
@@ -17,7 +17,8 @@ const en = {
     'purpose': 'Purpose',
     'slick': 'Slick Carousel',
     'type': 'Type {0}',
-    'vuejs': 'Vue.js 2',
+    'version': 'Version',
+    'vuejs': 'Vue.js 3',
 
     'cl-allow': 'Allow cookies',
     'cl-allow-link': 'Allow cookies',
@@ -46,17 +47,17 @@ const en = {
 
     'meta-keywords': 'gulp, vue, vue router, vue i18n, templating, skeleton, boilerplate, bootstrap, fontawesome, slick, carousel, lazyload, css user agent, cssua, cookieconsent, cookie, docker, jquery',
     'meta-description': '',
-    'meta-author': 'InsanityMeetsHH',
+    'meta-author': 'CodelineRed',
 
     'nav-about': 'About us',
     'nav-error': 'Error page',
     'nav-home': 'Home',
 
     'sm-facebook': '',
-    'sm-instagram': 'https://www.instagram.com/insanitymeetshh/',
-    'sm-twitch': 'https://www.twitch.tv/insanitymeetshh',
-    'sm-twitter': 'https://twitter.com/InsanityMeetsHH',
-    'sm-youtube': 'https://www.youtube.com/channel/UCQhN04sk-qPWMo9cn6g_DRw',
+    'sm-instagram': 'https://www.instagram.com/codelinered/',
+    'sm-twitch': 'https://www.twitch.tv/codelinered',
+    'sm-twitter': 'https://twitter.com/CodelineRed',
+    'sm-youtube': 'https://www.youtube.com/@CodelineRed',
 
     'dp': '.',
     'ts': ',',
@@ -68,7 +69,7 @@ const en = {
     'datetime': 'YYYY-MM-DD hh:mm:ss',
     'datetime-suffix': 'YYYY-MM-DD hh:mm:ss a',
     'timezone': 'America/New_York',
-    
+
     'month': '{0} month',
     'months': '{0} months',
     'year': '{0} year',
@@ -76,13 +77,13 @@ const en = {
 };
 
 const de = {
-    'bootstrap': 'Bootstrap 4',
+    'bootstrap': 'Bootstrap 5',
     'cookieconsent': 'Cookieconsent 3',
     'cookie-policy-title': 'Cookie-Richtlinie',
     'cssua': 'CSS User Agent',
     'cssua-monitor': 'CSS User Agent Überwacher',
     'expires': 'Ablauf',
-    'fontawesome': 'Font Awesome 5',
+    'fontawesome': 'Font Awesome 6',
     'included': 'inklusive',
     'lazyload': 'LazyLoad Image',
     'lazyload-example': 'LazyLoad Beispiel',
@@ -92,7 +93,7 @@ const de = {
     'purpose': 'Zweck',
     'slick': 'Slick Carousel',
     'type': 'Typ {0}',
-    'vuejs': 'Vue.js 2',
+    'vuejs': 'Vue.js 3',
 
     'cl-allow': 'Cookies zulassen',
     'cl-allow-link': 'Cookies zulassen',
@@ -119,7 +120,7 @@ const de = {
     'nav-about': 'Über uns',
     'nav-error': 'Fehlerseite',
     'nav-home': 'Startseite',
-    
+
     'dp': ',',
     'ts': '.',
     'date': 'DD.MM.YYYY',
@@ -130,7 +131,7 @@ const de = {
     'datetime': 'DD.MM.YYYY HH:mm:ss',
     'datetime-suffix': 'DD.MM.YYYY HH:mm:ss \\U\\h\\r',
     'timezone': 'Europe/Berlin',
-    
+
     'month': '{0} Monat',
     'months': '{0} Monate',
     'year': '{0} Jahr',

@@ -1,4 +1,5 @@
-import Vue from 'vue';
+import { createApp } from 'vue';
+import { FontAwesomeIcon, FontAwesomeLayers } from '@fortawesome/vue-fontawesome';
 import filters from './app/filters';
 import fontawesome from './app/fontawesome';
 import i18n from './app/i18n';
@@ -7,20 +8,23 @@ import DefaultLayout from './component/layout/default';
 import EmptyLayout from './component/layout/empty';
 import App from './component/partial/app';
 
-Vue.component('l-default', DefaultLayout);
-Vue.component('l-empty', EmptyLayout);
+const app = Vue.createApp(App); // eslint-disable-line no-undef
+app.use(i18n);
+app.use(router);
 
-Vue.filter('formatDateTime', filters.formatDateTime);
-Vue.filter('formatDuration', filters.formatDuration);
+app.component('l-default', DefaultLayout);
+app.component('l-empty', EmptyLayout);
+app.component('fa', FontAwesomeIcon);
+app.component('fal', FontAwesomeLayers);
 
-Vue.config.productionTip = false;
+app.config.globalProperties.$filters = {
+    formatDateTime: filters.formatDateTime,
+    formatDuration: filters.formatDuration
+};
+app.config.globalProperties.version = '2.0.0';
+app.config.globalProperties.exampleDate = (Date.now()) / 1000;
 
-const app = new Vue({
-    fontawesome: fontawesome,
-    i18n: i18n,
-    router: router,
-    render: h => h(App)
-}).$mount('#app');
+app.mount('#app');
 
 // make app global
 window.app = app;

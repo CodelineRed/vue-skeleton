@@ -1,7 +1,7 @@
 <script>
     import cookieConsent from '../../module/cookie-consent';
     import slider from '../../module/slider';
-    
+
     export default {
         mixins: [cookieConsent, slider],
         props: {
@@ -46,10 +46,10 @@
 </script>
 
 <template>
-    <div class="col-auto">
+    <div class="col-4 col-md-6">
         <div class="btn-group" :class="getButtonClass()">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <font-awesome-icon :icon="['fas', 'globe']" />
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <fa icon="fa-solid fa-globe"></fa>
             </button>
             <div class="dropdown-menu">
                 <a v-for="lang in languages" :key="lang" class="dropdown-item" onclick="javascript:return false;" href="#" @click="changeLang(lang)">{{ $t("lang-" + lang) }}</a>

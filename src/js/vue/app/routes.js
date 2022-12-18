@@ -73,7 +73,7 @@ const routes = [
     },
     {
         component: ErrorPage,
-        path: '*',
+        path: '/:catchAll(.*)',
         meta: {
             title: 'i18n.nav-error - i18n.app',
             layout: 'default',

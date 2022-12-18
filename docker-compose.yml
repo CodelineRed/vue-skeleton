@@ -4,17 +4,19 @@ volumes:
     logs:
         driver: local
 
+# docker-compose up -d
 services:
-    # http://localhost:3050
+    # http://localhost:7702
+    # docker exec -ti vue-skeleton php --version
     webserver:
-        image: php:7-alpine
+        image: php:8-alpine
         container_name: vue-skeleton
         working_dir: /var/www
         command: php -S 0.0.0.0:8080 -t public
         environment:
             docker: "true"
         ports:
-            - 3050:8080
+            - 7702:8080
         volumes:
             - .:/var/www
             - logs:/var/www/logs

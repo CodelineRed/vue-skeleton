@@ -1,16 +1,16 @@
 {
-    "name": "insanitymeetshh/vue-skeleton",
+    "name": "codelinered/vue-skeleton",
     "description": "Vue.js Skeleton with Gulp",
-    "version": "1.8.0",
+    "version": "2.0.0",
     "keywords": ["gulp", "vue", "vue router", "vue i18n", "templating", "skeleton", "boilerplate", "bootstrap", "fontawesome", "slick", "carousel", "lazyload", "css user agent", "cssua", "cookieconsent", "cookie", "docker", "jquery"],
-    "homepage": "https://vue.insanitymeetshh.net",
+    "homepage": "https://vue.codelinered.net",
     "license": "MIT",
     "type": "project",
     "authors": [
         {
-            "name": "InsanityMeetsHH",
-            "email": "software@insanitymeetshh.net",
-            "homepage": "https://www.insanitymeetshh.net"
+            "name": "CodelineRed",
+            "email": "software@codelinered.net",
+            "homepage": "https://www.codelinered.net"
         }
     ],
     "minimum-stability": "stable",

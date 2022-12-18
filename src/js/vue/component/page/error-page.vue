@@ -1,6 +1,6 @@
 <script>
     export default {
-        
+
     };
 </script>
 
@@ -10,7 +10,7 @@
             <h1 class="text-center">
                 {{ $t("nav-error") }}
             </h1>
-            <p>{{ $t("page-not-found") }} <font-awesome-icon :icon="['far', 'sad-cry']" /></p>
+            <p>{{ $t("page-not-found") }} <fa icon="fa-regular fa-sad-cry" /></p>
         </div>
     </div>
 </template>
