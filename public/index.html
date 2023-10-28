@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" data-bs-theme="dark">
     <head>
         <script>
+            // setCookie('name', 'value', exdays);
+            // getCookie('name');
             function setCookie(e,t,n){let o=new Date;o.setTime(o.getTime()+24*n*60*60*1e3);let i="expires="+o.toUTCString();document.cookie=e+"="+t+";"+i+";path=/"}function getCookie(e){for(var t=e+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(t))return i.substring(t.length,i.length)}return""}
             let cookiesAllowed = getCookie('cookieconsent_status') !== 'deny';
             let cookieLayer = {};
@@ -79,11 +81,11 @@
         <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
         <link rel="yandex-tableau-widget" href="img/favicons/yandex-browser-manifest.json">
         
-        <link rel="stylesheet" href="css/styles.css?v=2.0.0">
+        <link rel="stylesheet" href="css/styles.css?v=2.1.0">
     </head>
     <body>
         <div id="app"></div>
-        <script src="js/scripts.js?v=2.0.0"></script>
+        <script src="js/scripts.js?v=2.1.0"></script>
         <script data-main="js/vue/app" src="js/require/require.js?v=2.3.6"></script>
     </body>
 </html>

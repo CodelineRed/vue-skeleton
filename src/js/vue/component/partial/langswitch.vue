@@ -52,7 +52,7 @@
                 <fa icon="fa-solid fa-globe"></fa>
             </button>
             <div class="dropdown-menu">
-                <a v-for="lang in languages" :key="lang" class="dropdown-item" onclick="javascript:return false;" href="#" @click="changeLang(lang)">{{ $t("lang-" + lang) }}</a>
+                <a v-for="lang in languages" :key="lang" class="dropdown-item" onclick="javascript:return false;" href="#" @click="changeLang(lang)">{{ $t("lang-" + lang) }}</a>
             </div>
         </div>
     </div>

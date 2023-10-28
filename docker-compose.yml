@@ -12,11 +12,11 @@ services:
         image: php:8-alpine
         container_name: vue-skeleton
         working_dir: /var/www
-        command: php -S 0.0.0.0:8080 -t public
+        command: php -S 0.0.0.0:80 -t public
         environment:
             docker: "true"
         ports:
-            - 7702:8080
+            - 7702:80
         volumes:
             - .:/var/www
             - logs:/var/www/logs

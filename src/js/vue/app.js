@@ -21,7 +21,7 @@ app.config.globalProperties.$filters = {
     formatDateTime: filters.formatDateTime,
     formatDuration: filters.formatDuration
 };
-app.config.globalProperties.version = '2.0.0';
+app.config.globalProperties.version = '2.1.0';
 app.config.globalProperties.exampleDate = (Date.now()) / 1000;
 
 app.mount('#app');

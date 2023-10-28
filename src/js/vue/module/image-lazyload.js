@@ -17,6 +17,15 @@ const imageLazyLoad = {
         },
 
         /**
+         * Returns an empty SVG in given width and height
+         * 
+         * @returns {string}
+         */
+        getImagePlaceholder: function(width, height) {
+            return 'data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 ' + width + ' ' + height + '\'%3e%3c/svg%3e';
+        },
+
+        /**
          * Init image lazy load
          * 
          * @returns {undefined}
