@@ -56,7 +56,7 @@ If you need PHP, you have to go to [Install PHP](#install-php-optional).
 
 ## Install Master/ Develop Build
 ### Required
-- [Node.js](http://nodejs.org/en/download/) >= 12.20
+- [Node.js](http://nodejs.org/en/download/) >= 16
 - [npm](http://www.npmjs.com/get-npm) `$ npm i npm@latest -g`
 - [gulp-cli](https://www.npmjs.com/package/gulp-cli) `$ npm i gulp-cli@latest -g`
 - ~~[windows-build-tools](https://www.npmjs.com/package/windows-build-tools) `$ npm i windows-build-tools@latest -g`~~

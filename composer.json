@@ -1,7 +1,7 @@
 {
     "name": "codelinered/vue-skeleton",
     "description": "Vue.js Skeleton with Gulp",
-    "version": "2.0.0",
+    "version": "2.1.0-dev",
     "keywords": ["gulp", "vue", "vue router", "vue i18n", "templating", "skeleton", "boilerplate", "bootstrap", "fontawesome", "slick", "carousel", "lazyload", "css user agent", "cssua", "cookieconsent", "cookie", "docker", "jquery"],
     "homepage": "https://vue.codelinered.net",
     "license": "MIT",
