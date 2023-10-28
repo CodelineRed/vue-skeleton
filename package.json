@@ -1,7 +1,7 @@
 {
     "name": "vue-skeleton",
-    "version": "2.1.0-dev",
-    "commitDate": "2023-10-29T12:00:00+01:00",
+    "version": "2.1.0",
+    "commitDate": "2023-10-29T01:00:00+01:00",
     "description": "Vue.js Skeleton with Gulp",
     "keywords": [
         "gulp",
@@ -38,7 +38,7 @@
         "url": "git://github.com/CodelineRed/vue-skeleton.git"
     },
     "engines": {
-        "node": ">=12.20.0"
+        "node": ">=16"
     },
     "devDependencies": {
         "@babel/core": "^7.23.2",
