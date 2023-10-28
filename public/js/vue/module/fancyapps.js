@@ -1,0 +1,1 @@
+define(["exports"],(function(n){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;const e={methods:{initFancyapps:function(){let n=this.$t("lang"),e={groupAll:!0,idle:!1};void 0!==Fancybox.l10n[n]&&(e.l10n=Fancybox.l10n[n]),Fancybox.bind('[data-fancybox], a[href$=".jpg"]',e)}}};n.default=e}));
