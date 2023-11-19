@@ -27,13 +27,13 @@
             <div class="row">
                 <div class="col-12 pb-5 text-center">
                     <h1>
-                        {{ $t("app") }} - {{ $t("author") }}&nbsp;&nbsp;
+                        {{ $t("app") }} - {{ $t("author") }}
                         <a href="https://github.com/CodelineRed/vue-skeleton" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="GitHub"><fa icon="fa-brands fa-github" class="fa-inverse" /></a>
                     </h1>
                 </div>
             </div>
             <div class="row text-center justify-content-center">
-                <div class="col-12">
+                <div class="col-12 mb-3">
                     <span style="font-size: 1.75rem;">{{ $t("included") }}</span>
                 </div>
                 <div class="col-12 col-md-8 pb-5">
@@ -51,7 +51,7 @@
                             <!-- Bootstrap Icon -->
                             <fal class="fa-10x">
                                 <fa icon="fa-regular fa-square"></fa>
-                                <fa icon="fa-solid fa-bold" class="fa-inverse" transform="shrink-6"></fa>
+                                <fa icon="fa-brands fa-bootstrap" class="fa-inverse" transform="left-1 shrink-7"></fa>
                             </fal>
                             <a href="https://getbootstrap.com/" target="_blank" class="d-block label">{{ $t("bootstrap") }}</a>
                         </div>
@@ -78,7 +78,7 @@
                             <fal class="fa-10x">
                                 <fa icon="fa-solid fa-square"></fa>
                                 <fa icon="fa-solid fa-image" class="fa-inverse" transform="shrink-4"></fa>
-                                <fa icon="fa-solid fa-sync" transform="shrink-14 up-2.5 right-4"></fa>
+                                <fa icon="fa-solid fa-sync" transform="shrink-12 up-2.75 right-3.8"></fa>
                             </fal>
                             <a href="https://www.andreaverlicchi.eu/lazyload/" target="_blank" class="d-block label">{{ $t("lazyload") }}</a>
                         </div>
@@ -124,20 +124,20 @@
                                 {{ $t("lazyload-example") }}
                             </h3>
                             <a href="https://picsum.photos/id/82/1920/1080" data-fancybox="demo" :data-caption="$t('gallery-caption-1')">
-                                <img :src="getImagePlaceholder(798, 420)" :data-src="'https://via.placeholder.com/266x140/2e2e2e/fff?text=' + $t('open-gallery')" alt="image" class="img-fluid lazy">
+                                <img :src="getImagePlaceholder(798, 420)" :data-src="'https://dummyimage.com/266x140/2e2e2e/ffffff?text=' + $t('open-gallery')" alt="image" class="img-fluid lazy">
                             </a>
                             <div class="d-none">
                                 <a href="https://picsum.photos/id/64/1920/1080" data-fancybox="demo" :data-caption="$t('gallery-caption-2')">
-                                    <img src="https://via.placeholder.com/266x140/1a0e0e/fff?text=Image%202" alt="image">
+                                    <img :src="'https://dummyimage.com/266x140/1a0e0e/ffffff?text=' + $t('image') + '%202'" alt="image">
                                 </a>
                                 <a href="https://picsum.photos/id/120/1920/1080" data-fancybox="demo" :data-caption="$t('gallery-caption-3')">
-                                    <img src="https://via.placeholder.com/266x140/0e1a12/fff?text=Image%203" alt="image">
+                                    <img :src="'https://dummyimage.com/266x140/0e1a12/ffffff?text=' + $t('image') + '%203'" alt="image">
                                 </a>
                                 <a href="https://picsum.photos/id/147/1920/1080" data-fancybox="demo" :data-caption="$t('gallery-caption-4')">
-                                    <img src="https://via.placeholder.com/266x140/0e0e1a/fff?text=Image%204" alt="image">
+                                    <img :src="'https://dummyimage.com/266x140/0e0e1a/ffffff?text=' + $t('image') + '%204'" alt="image">
                                 </a>
                                 <a href="https://picsum.photos/id/190/1920/1080" data-fancybox="demo" :data-caption="$t('gallery-caption-5')">
-                                    <img src="https://via.placeholder.com/266x140/2a1b2f/fff?text=Image%205" alt="image">
+                                    <img :src="'https://dummyimage.com/266x140/2a1b2f/ffffff?text=' + $t('image') + '%205'" alt="image">
                                 </a>
                             </div>
                         </div>

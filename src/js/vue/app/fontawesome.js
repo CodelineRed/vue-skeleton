@@ -1,6 +1,7 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
     faBlackTie as fabBlackTie,
+    faBootstrap as fabBootstrap,
     faCss3 as fabCss3,
     faFontAwesomeFlag as fabFontAwesomeFlag,
     faGithub as fabGithub,
@@ -14,7 +15,6 @@ import {
 } from '@fortawesome/free-regular-svg-icons';
 
 import {
-    faBold as fasBold,
     faChevronLeft as fasChevronLeft,
     faChevronRight as fasChevronRight,
     faCircle as fasCircle,
@@ -27,8 +27,8 @@ import {
     faUserSecret as fasUserSecret
 } from '@fortawesome/free-solid-svg-icons';
 
-library.add(fabBlackTie, fabCss3, fabFontAwesomeFlag, fabGithub, fabHtml5, fabVuejs);
+library.add(fabBootstrap, fabBlackTie, fabCss3, fabFontAwesomeFlag, fabGithub, fabHtml5, fabVuejs);
 library.add(farSadCry, farSquare);
-library.add(fasBold, fasChevronLeft, fasChevronRight, fasCircle, fasGlobe, fasImage, fasMoon, fasSquare, fasSun, fasSync, fasUserSecret);
+library.add(fasChevronLeft, fasChevronRight, fasCircle, fasGlobe, fasImage, fasMoon, fasSquare, fasSun, fasSync, fasUserSecret);
 
 export default library;

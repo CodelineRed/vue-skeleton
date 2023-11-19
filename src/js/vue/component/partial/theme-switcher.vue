@@ -26,10 +26,8 @@
 </script>
 
 <template>
-    <span class="nav-link d-inline-block">
-        <span class="theme-switcher" :class="currentTheme" @click="changeTheme()">
-            <fa icon="fa-solid fa-sun pe-1" />
-            <fa icon="fa-solid fa-moon ps-1" />
-        </span>
+    <span class="theme-switcher" :class="currentTheme" @click="changeTheme()">
+        <fa icon="fa-solid fa-sun pe-1" />
+        <fa icon="fa-solid fa-moon ps-1" />
     </span>
 </template>

@@ -6,7 +6,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [2.1.0]
+
+## [2.2.0] - 2023-11-19
+### Added
+- [`social-media.jpg`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/img/social-media.jpg)
+- all texts to `de` in [`app/i18n-locales.js`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/js/vue/app/i18n-locales.js)
+- `mb-3` to "included" in [`page/home.vue`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/js/vue/app/component/page/home.vue)
+
+### Changed
+- [`app/routes.js`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/js/vue/app/routes.js)
+- Bootstrap icon in [`page/home.vue`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/js/vue/app/component/page/home.vue)
+- dummy image URL in [`page/home.vue`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/js/vue/app/component/page/home.vue)
+- template in [`partial/theme-switcher.vue`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/js/vue/component/partial/theme-switcher.vue)
+
+### Fixed
+- Lazyload Icon in [`page/home.vue`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/js/vue/app/component/page/home.vue)
+- spacing between globe and chevron in [`partial/langswitch.vue`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/js/vue/app/component/partial/langswitch.vue)
+- footer margin bottom in [`module/cookieconsent.scss`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/scss/module/cookieconsent.scss)
+
+## [2.1.0] - 2023-10-29
 ### Added
 - Bootstrap theme in [`public/index.html`](https://github.com/CodelineRed/vue-skeleton/blob/main/public/index.html)
 - Moon, Sun and Black Tie in [`app/fontawesome.js`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/js/vue/app/fontawesome.js)

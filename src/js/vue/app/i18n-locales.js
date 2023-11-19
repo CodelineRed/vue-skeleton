@@ -8,6 +8,7 @@ const en = {
     'cssua-monitor': 'CSS User Agent Monitor',
     'expires': 'Expires',
     'fontawesome': 'Font Awesome 6',
+    'image': 'Image',
     'included': 'included',
     'lazyload': 'LazyLoad Image',
     'fancyapps': 'Fancyapps 5',
@@ -17,7 +18,7 @@ const en = {
     'gallery-caption-2': 'of Life,',
     'gallery-caption-3': 'the Universe,',
     'gallery-caption-4': 'and Everything',
-    'gallery-caption-5': 'is 42',
+    'gallery-caption-5': '42',
     'name': 'Name',
     'page-not-found': 'Page not found.',
     'provider': 'Provider',
@@ -54,7 +55,7 @@ const en = {
     'locale': 'en_US',
 
     'meta-keywords': 'gulp, vue, vue router, vue i18n, templating, skeleton, boilerplate, bootstrap, fontawesome, slick, carousel, lazyload, css user agent, cssua, cookieconsent, cookie, docker, jquery',
-    'meta-description': '',
+    'meta-description': 'Vue.js Skeleton with Gulp',
     'meta-author': 'CodelineRed',
 
     'nav-about': 'About us',
@@ -85,6 +86,8 @@ const en = {
 };
 
 const de = {
+    'app': 'Vue Skeleton',
+    'author': 'CodelineRed',
     'bootstrap': 'Bootstrap 5',
     'cookieconsent': 'Cookieconsent 3',
     'cookie-policy-title': 'Cookie-Richtlinie',
@@ -92,6 +95,7 @@ const de = {
     'cssua-monitor': 'CSS User Agent Überwacher',
     'expires': 'Ablauf',
     'fontawesome': 'Font Awesome 6',
+    'image': 'Bild',
     'included': 'inklusive',
     'lazyload': 'LazyLoad Image',
     'fancyapps': 'Fancyapps 5',
@@ -101,13 +105,14 @@ const de = {
     'gallery-caption-2': 'nach dem Leben,',
     'gallery-caption-3': 'dem Universum',
     'gallery-caption-4': 'und dem ganzen Rest',
-    'gallery-caption-5': 'ist 42',
+    'gallery-caption-5': '42',
     'name': 'Name',
     'page-not-found': 'Seite existiert nicht.',
     'provider': 'Anbieter',
     'purpose': 'Zweck',
     'slick': 'Slick Carousel',
     'type': 'Typ {0}',
+    'version': 'Version',
     'vuejs': 'Vue.js 3',
 
     'cl-allow': 'Cookies zulassen',
@@ -130,12 +135,25 @@ const de = {
     'cpm-type3': 'Typ 3 = Leistungs-Cookie',
     'cpm-type4': 'Typ 4 = Cookie Dritter',
 
+    'lang-de': 'Deutsch',
+    'lang-en': 'English',
+
     'lang': 'de',
     'locale': 'de_DE',
+
+    'meta-keywords': 'gulp, vue, vue router, vue i18n, templating, skeleton, boilerplate, bootstrap, fontawesome, slick, carousel, lazyload, css user agent, cssua, cookieconsent, cookie, docker, jquery',
+    'meta-description': 'Vue.js Skeleton mit Gulp',
+    'meta-author': 'CodelineRed',
 
     'nav-about': 'Über uns',
     'nav-error': 'Fehlerseite',
     'nav-home': 'Startseite',
+
+    'sm-facebook': '',
+    'sm-instagram': 'https://www.instagram.com/codelinered/',
+    'sm-twitch': 'https://www.twitch.tv/codelinered',
+    'sm-twitter': 'https://twitter.com/CodelineRed',
+    'sm-youtube': 'https://www.youtube.com/@CodelineRed',
 
     'dp': ',',
     'ts': '.',

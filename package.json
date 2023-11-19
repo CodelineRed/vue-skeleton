@@ -1,7 +1,7 @@
 {
     "name": "vue-skeleton",
-    "version": "2.1.0",
-    "commitDate": "2023-10-29T01:00:00+01:00",
+    "version": "2.2.0-dev",
+    "commitDate": "2023-11-19T10:45:00+01:00",
     "description": "Vue.js Skeleton with Gulp",
     "keywords": [
         "gulp",
@@ -32,7 +32,7 @@
         "url": "https://github.com/CodelineRed/vue-skeleton/issues"
     },
     "license": "MIT",
-    "homepage": "http://vue.codelinered.net",
+    "homepage": "https://vue.codelinered.net",
     "repository": {
         "type": "git",
         "url": "git://github.com/CodelineRed/vue-skeleton.git"
@@ -41,15 +41,15 @@
         "node": ">=16"
     },
     "devDependencies": {
-        "@babel/core": "^7.23.2",
-        "@babel/plugin-transform-modules-amd": "^7.23.0",
-        "@fancyapps/ui": "^5.0.24",
+        "@babel/core": "^7.23.3",
+        "@babel/plugin-transform-modules-amd": "^7.23.3",
+        "@fancyapps/ui": "^5.0.28",
         "@fortawesome/fontawesome-free": "^6.4.2",
         "@fortawesome/fontawesome-svg-core": "^6.4.2",
         "@fortawesome/free-brands-svg-icons": "^6.4.2",
         "@fortawesome/free-regular-svg-icons": "^6.4.2",
         "@fortawesome/free-solid-svg-icons": "^6.4.2",
-        "@fortawesome/vue-fontawesome": "^3.0.3",
+        "@fortawesome/vue-fontawesome": "^3.0.5",
         "babel-eslint": "^9.0.0",
         "bootstrap": "^5.3.2",
         "browser-sync": "^2.29.3",
@@ -83,8 +83,8 @@
         "sass": "~1.64",
         "slick-carousel": "^1.8.1",
         "vanilla-lazyload": "^17.8.5",
-        "vue": "^3.3.7",
-        "vue-i18n": "^9.6.1",
+        "vue": "^3.3.8",
+        "vue-i18n": "^9.7.0",
         "vue-router": "^4.2.5"
     },
     "scripts": {
