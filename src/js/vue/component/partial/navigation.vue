@@ -21,7 +21,9 @@
                 <router-link class="nav-link" to="/foobar">{{ $t("nav-error") }}</router-link>
             </li>
             <li class="nav-item">
-                <c-theme-switcher />
+                <span class="nav-link d-inline-block">
+                    <c-theme-switcher />
+                </span>
             </li>
         </ul>
     </div>

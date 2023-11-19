@@ -28,18 +28,22 @@
 
     &~div {
         footer {
-            margin-bottom: 200px;
+            margin-bottom: 240px;
 
             @include media-breakpoint-up('sm') {
-                margin-bottom: 200px;
+                margin-bottom: 250px;
             }
 
             @include media-breakpoint-up('md') {
-                margin-bottom: 150px;
+                margin-bottom: 200px;
             }
 
             @include media-breakpoint-up('lg') {
-                margin-bottom: 100px;
+                margin-bottom: 130px;
+            }
+
+            @include media-breakpoint-up('xl') {
+                margin-bottom: 120px;
             }
         }
     }
@@ -47,6 +51,11 @@
     .cc-btn {
         @extend .btn;
         @extend .btn-primary;
+    }
+
+    .cc-link {
+        color: $white;
+        padding: 0;
     }
 
     .cc-opt-in {
@@ -65,13 +74,7 @@
         }
     }
 
-    .cc-link {
-        color: $white;
-        padding: 0;
-    }
-
     .container {
-        background-color: $theme-color-4;
         color: $white;
         padding-bottom: 1em;
         padding-top: 1em;

@@ -20,7 +20,7 @@ const routes = [
                 { property: 'og:type', content: 'website' },
                 { property: 'og:title', content: 'i18n.nav-home - i18n.app' },
                 { property: 'og:description', content: 'i18n.meta-description' },
-                { property: 'og:image', content: '' },
+                { property: 'og:image', content: 'https://vue.codelinered.net/img/social-media.jpg' },
                 { property: 'og:site_name', content: 'i18n.nav-home' },
                 { property: 'og:url', content: 'router.current-route' },
                 { property: 'og:locale', content: 'i18n.locale' },
@@ -29,7 +29,7 @@ const routes = [
                 { name: 'twitter:site', content: 'i18n.meta-author' },
                 { name: 'twitter:title', content: 'i18n.nav-home - i18n.app' },
                 { name: 'twitter:description', content: 'i18n.meta-description' },
-                { name: 'twitter:image', content: '' }
+                { property: 'twitter:image', content: 'https://vue.codelinered.net/img/social-media.jpg' }
             ],
             linkTags: [
                 { rel: 'me', href: 'i18n.sm-twitter' },
@@ -54,7 +54,7 @@ const routes = [
                 { property: 'og:type', content: 'website' },
                 { property: 'og:title', content: 'i18n.nav-about - i18n.app' },
                 { property: 'og:description', content: 'i18n.meta-description' },
-                { property: 'og:image', content: '' },
+                { property: 'og:image', content: 'https://vue.codelinered.net/img/social-media.jpg' },
                 { property: 'og:site_name', content: 'i18n.nav-about' },
                 { property: 'og:url', content: 'router.current-route' },
                 { property: 'og:locale', content: 'i18n.locale' },
@@ -63,7 +63,7 @@ const routes = [
                 { name: 'twitter:site', content: 'i18n.meta-author' },
                 { name: 'twitter:title', content: 'i18n.nav-about - i18n.app' },
                 { name: 'twitter:description', content: 'i18n.meta-description' },
-                { name: 'twitter:image', content: '' }
+                { property: 'twitter:image', content: 'https://vue.codelinered.net/img/social-media.jpg' }
             ],
             linkTags: [
                 { rel: 'me', href: 'i18n.sm-twitter' },
@@ -87,7 +87,7 @@ const routes = [
                 { property: 'og:type', content: 'website' },
                 { property: 'og:title', content: 'i18n.nav-error - i18n.app' },
                 { property: 'og:description', content: 'i18n.meta-description' },
-                { property: 'og:image', content: '' },
+                { property: 'og:image', content: 'https://vue.codelinered.net/img/social-media.jpg' },
                 { property: 'og:site_name', content: 'i18n.nav-error' },
                 { property: 'og:url', content: 'router.current-route' },
                 { property: 'og:locale', content: 'i18n.locale' },
@@ -96,7 +96,7 @@ const routes = [
                 { name: 'twitter:site', content: 'i18n.meta-author' },
                 { name: 'twitter:title', content: 'i18n.nav-error - i18n.app' },
                 { name: 'twitter:description', content: 'i18n.meta-description' },
-                { name: 'twitter:image', content: '' }
+                { property: 'twitter:image', content: 'https://vue.codelinered.net/img/social-media.jpg' }
             ],
             linkTags: [
                 { rel: 'me', href: 'i18n.sm-twitter' },

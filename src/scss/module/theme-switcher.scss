@@ -59,6 +59,15 @@
 
 html {
     &[data-bs-theme='light'] {
+        .cc-window {
+            background-color: $white;
+
+            .cc-link,
+            .container {
+                color: $black;
+            }
+        }
+
         .fa-inverse {
             color: $black;
         }
