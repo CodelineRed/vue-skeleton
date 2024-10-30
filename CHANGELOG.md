@@ -7,6 +7,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [2.3.0] - 2024-10-31
+### Changed
+- @babel/core 7.23.3 to 7.26.0
+- @babel/plugin-transform-modules-amd 7.23.3 to 7.25.9
+- @fancyapps/ui 5.0.28 to 5.0.36
+- @fortawesome/fontawesome-free 6.4.2 to 6.6.0
+- @fortawesome/fontawesome-svg-core 6.4.2 to 6.6.0
+- @fortawesome/free-brands-svg-icons 6.4.2 to 6.6.0
+- @fortawesome/free-regular-svg-icons 6.4.2 to 6.6.0
+- @fortawesome/free-solid-svg-icons 6.4.2 to 6.6.0
+- @fortawesome/vue-fontawesome 3.0.5 to 3.0.8
+- bootstrap 5.3.2 to 5.3.3
+- browser-sync 2.29.3 to 3.0.3
+- eslint-plugin-import 2.29.0 to 2.31.0
+- eslint-plugin-vue 9.18.1 to 9.30.0
+- gulp-vue-single-file-component 1.2.8 to 1.2.12
+- moment 2.29.4 to 2.30.1
+- requirejs 2.3.6 to 2.3.7
+- sass": "~1.64 to 1.77.6
+- vanilla-lazyload 17.8.5 to 19.1.3
+- vue 3.3.8 to 3.5.12
+- vue-i18n 9.7.0 to 10.0.4
+- vue-router 4.2.5 to 4.4.5
+
 ## [2.2.0] - 2023-11-19
 ### Added
 - [`social-media.jpg`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/img/social-media.jpg)
