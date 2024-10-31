@@ -1,3 +1,4 @@
+export default
 {
     "extends": "plugin:vue/recommended",
     "plugins": ["vue"],

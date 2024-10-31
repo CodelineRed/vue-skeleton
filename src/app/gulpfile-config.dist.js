@@ -1,3 +1,4 @@
+export default
 {
     "browserSyncDev": {
         "port": 3000,

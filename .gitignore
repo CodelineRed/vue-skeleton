@@ -11,6 +11,7 @@
 /public/json/
 gulpfile.json
 gulpfile-config.json
+gulpfile-config.js
 .npmrc
 # package-lock.json
 
