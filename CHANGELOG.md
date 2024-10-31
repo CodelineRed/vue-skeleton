@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [3.0.0] - 2024-11-01
+## [3.0.0] - 2024-10-31
 ### Added
 - type = module in [`package.json`](https://github.com/CodelineRed/vue-skeleton/blob/main/package.json)
 
