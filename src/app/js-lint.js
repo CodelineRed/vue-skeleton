@@ -1,26 +1,7 @@
+export default
 {
-    "extends": [
-        "eslint:recommended",
-        "plugin:import/errors",
-        "plugin:import/warnings"
-    ],
-    "plugins": ["import"],
-    "parserOptions": {
-        "sourceType": "module",
-        "ecmaVersion": 2018
-    },
+    "extends": "eslint:recommended",
     "rules": {
-        "import/no-unresolved": [2, {
-            "ignore": ["(.*)component(.*)"]
-        }],
-        "import/named": "error",
-        "import/namespace": "error",
-        "import/default": "error",
-        "import/export": "error",
-        "import/no-named-as-default": "warn",
-        "import/no-named-as-default-member": "warn",
-        "import/no-duplicates": "warn",
-
         "constructor-super": "error",
         "for-direction": "error",
         "getter-return": "error",

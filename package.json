@@ -1,8 +1,9 @@
 {
     "name": "vue-skeleton",
-    "version": "2.3.0",
-    "commitDate": "2024-10-31T12:00:00+01:00",
+    "version": "3.0.0",
+    "commitDate": "2024-10-31T18:00:00+01:00",
     "description": "Vue.js Skeleton with Gulp",
+    "type": "module",
     "keywords": [
         "gulp",
         "vue",
@@ -38,7 +39,7 @@
         "url": "git://github.com/CodelineRed/vue-skeleton.git"
     },
     "engines": {
-        "node": ">=16"
+        "node": ">=18.17"
     },
     "devDependencies": {
         "@babel/core": "^7.26.0",
@@ -53,22 +54,22 @@
         "babel-eslint": "^9.0.0",
         "bootstrap": "^5.3.3",
         "browser-sync": "^3.0.3",
-        "chalk": "^4.1.2",
+        "chalk": "^5.3.0",
         "cookieconsent": "^3.1.1",
         "cookieconsent-scss-less": "^3.0.6",
         "cssuseragent": "^2.1.31",
-        "del": "^6.1.1",
+        "del": "^8.0.0",
         "eslint-plugin-import": "^2.31.0",
         "eslint-plugin-vue": "^9.30.0",
         "gulp": "^4.0.2",
-        "gulp-autoprefixer": "^8.0.0",
+        "gulp-autoprefixer": "^9.0.0",
         "gulp-babel": "^8.0.0",
         "gulp-clean-css": "^4.3.0",
         "gulp-concat": "^2.6.1",
         "gulp-eslint": "^6.0.0",
-        "gulp-favicons": "^3.0.0",
+        "gulp-favicons": "^4.0.1",
         "gulp-if": "^3.0.0",
-        "gulp-imagemin": "7.1.0",
+        "gulp-imagemin": "^9.1.0",
         "gulp-jsonminify": "^1.1.0",
         "gulp-rename": "^2.0.0",
         "gulp-sass": "^5.1.0",

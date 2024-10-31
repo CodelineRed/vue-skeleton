@@ -6,6 +6,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.0] - 2024-10-31
+### Added
+- type = module in [`package.json`](https://github.com/CodelineRed/vue-skeleton/blob/main/package.json)
+
+### Changed
+- [`src/app/is-env.js`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/app/is-env.js)
+- [`src/app/lint.js`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/app/lint.js)
+- [`npm-postinstall.js`](https://github.com/CodelineRed/vue-skeleton/blob/main/npm-postinstall.js)
+- [`.gitignore`](https://github.com/CodelineRed/vue-skeleton/blob/main/.gitignore)
+- `lintAll` to `lint` in [`gulpfile.mjs`](https://github.com/CodelineRed/vue-skeleton/blob/main/gulpfile.mjs)
+- [`README.md`](https://github.com/CodelineRed/vue-skeleton/blob/main/README.md)
+- chalk 4.1.2 to 5.3.0
+- del 6.1.1 to 8.0.0
+- gulp-autoprefixer 8.0.0 to 9.0.0
+- gulp-favicons 3.0.0 to 4.0.1
+- gulp-imagemin 7.1.0 to 9.1.0
+- node 16 to 18.17
+
+### Removed
+- src/app/gulpfile.dist.json and replaced with [`src/app/gulpfile-config.dist.js`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/app/gulpfile-config.dist.js)
+- src/app/import-lint.json and replaced with [`src/app/import-lint.js`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/app/import-lint.js)
+- src/app/js-lint.json and replaced with [`src/app/js-lint.js`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/app/js-lint.js)
+- src/app/scss-lint.json and replaced with [`src/app/scss-lint.js`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/app/scss-lint.js)
+- src/app/vue-lint.json and replaced with [`src/app/vue-lint.js`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/app/vue-lint.js)
+- gulpfile.js and replaced with [`gulpfile.mjs`](https://github.com/CodelineRed/vue-skeleton/blob/main/gulpfile.mjs)
 
 ## [2.3.0] - 2024-10-31
 ### Changed
@@ -98,7 +123,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - vue-router 4.1.6 to 4.2.5
 
 ### Removed
-- underscore `_` from all [`module/_*.scss`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/scss/module/)
+- underscore `_` from all [`module/_*.scss`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/scss/module/)
 - example date in [`partial/version.vue`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/js/vue/app/component/partial/version.vue)
 - unnecessary `module/_modal.scss`
 - `master` branch and replaced with `main`
